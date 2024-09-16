@@ -1,0 +1,119 @@
+:root {
+    --dark: #a9c7f7;
+    --darker: #064169;
+    --darkest: #344364;
+    --grey: #0b0a0a;
+    --pink: #EC4899;
+    --purple: #8B5CF6;
+    --light: #060101;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #FFF;
+    background-color: var(--dark);
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--grey);
+    margin-bottom: 1rem;
+}
+
+#new-task-form {
+    display: flex;
+}
+
+#new-task-input {
+    flex: 1;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+    color: var(--grey);
+}
+
+#new-task-submit {
+    background-color: var(--pink);
+    color: #f7fafc;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list {
+    padding: 1rem;
+}
+
+.task-list h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--grey);
+    margin-bottom: 1rem;
+}
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.task .content {
+    flex: 1;
+}
+
+.task .content .text {
+    color: var(--light);
+    font-size: 1.125rem;
+}
+
+.actions button {
+    cursor: pointer;
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--pink);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.actions .edit {
+    color: var(--purple);
+}
+
+.actions .delete {
+    color: crimson;
+}
